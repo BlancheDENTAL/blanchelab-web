@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinic Dashboard | BlancheLab</title>
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%235E6AD2'/><text x='50' y='72' font-family='Arial' font-size='65' fill='white' text-anchor='middle' font-weight='bold'>B</text></svg>">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <span class="logo-b">B.</span><span class="logo-lab">Lab</span>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-item active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          Overview
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          New Order
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          Active Cases <span class="badge">12</span>
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+          Billing
+        </a>
+      </nav>
+      <div class="sidebar-bottom">
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          Settings
+        </a>
+        <a href="index.html" class="nav-item logout">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+          Back to Website
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <div class="search-bar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" placeholder="Search patients, case IDs...">
+        </div>
+        <div class="user-profile">
+          <div class="user-info">
+            <span class="user-name">Dr. James Kim</span>
+            <span class="clinic-name">Seoul Premium Dental</span>
+          </div>
+          <div class="avatar">JK</div>
+        </div>
+      </header>
+
+      <div class="dashboard-content">
+        <div class="page-title">
+          <h1>Welcome back, Dr. Kim 👋</h1>
+          <p>Here is what's happening with your cases today.</p>
+        </div>
+
+        <!-- Stats Row -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
+            <div class="stat-info">
+              <h3>Active Cases</h3>
+              <h2>12</h2>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></div>
+            <div class="stat-info">
+              <h3>Design Review</h3>
+              <h2>3 <span class="badge-text">Action Needed</span></h2>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div>
+            <div class="stat-info">
+              <h3>Shipped This Month</h3>
+              <h2>45</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Layout -->
+        <div class="content-grid">
+          <!-- Recent Orders Table -->
+          <div class="panel table-panel">
+            <div class="panel-header">
+              <h2>Recent Orders</h2>
+              <button class="btn-text">View All</button>
+            </div>
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Patient</th>
+                    <th>Restoration</th>
+                    <th>Shade</th>
+                    <th>Status</th>
+                    <th>Est. Delivery</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>John Doe</strong><br><span class="text-sm">ID: #BL-2034</span></td>
+                    <td>Zirconia Crown (#14, #15)</td>
+                    <td>A2</td>
+                    <td><span class="status-badge status-review">Review Needed</span></td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Sarah Smith</strong><br><span class="text-sm">ID: #BL-2033</span></td>
+                    <td>Clear Aligner (Full Arch)</td>
+                    <td>-</td>
+                    <td><span class="status-badge status-milling">In Production</span></td>
+                    <td>Oct 24, 2026</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Mike Johnson</strong><br><span class="text-sm">ID: #BL-2030</span></td>
+                    <td>All-on-X (Upper)</td>
+                    <td>BL1</td>
+                    <td><span class="status-badge status-shipped">Shipped</span></td>
+                    <td>Oct 20, 2026</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Emily Davis</strong><br><span class="text-sm">ID: #BL-2028</span></td>
+                    <td>e.max Inlay (#3)</td>
+                    <td>A3</td>
+                    <td><span class="status-badge status-shipped">Shipped</span></td>
+                    <td>Oct 18, 2026</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Action Required Panel -->
+          <div class="panel action-panel">
+            <div class="panel-header">
+              <h2>Action Required ⚠️</h2>
+            </div>
+            <div class="action-card">
+              <div class="action-meta">
+                <span class="patient-name">Patient: John Doe (#14, #15)</span>
+                <span class="time-ago">2 hours ago</span>
+              </div>
+              <h3>3D Design Review</h3>
+              <p>Our lab technician has uploaded the design for the Zirconia Crowns. Please review the margins and contacts.</p>
+              
+              <div class="mock-3d-viewer">
+                <!-- CSS Gradient as placeholder for 3D Viewer -->
+                <div class="viewer-text">Interactive 3D Viewer Loading...</div>
+              </div>
+
+              <div class="action-buttons">
+                <button class="btn-approve">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Approve
+                </button>
+                <button class="btn-revise">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg> Revise
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>
