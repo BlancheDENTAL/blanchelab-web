@@ -203,3 +203,42 @@
   }
   
   setTimeout(simulateLiveFeed, 2000);
+// CALCULATOR LOGIC
+const crownSlider = document.getElementById('crownSlider');
+const calcWrapper = document.querySelector('.calc-wrapper');
+if (crownSlider && calcWrapper) {
+  const calcCount = document.getElementById('calcCount');
+  const calcTotal = document.getElementById('calcTotal');
+  const calcUs = document.getElementById('calcUs');
+  const calcDentai = document.getElementById('calcDentai');
+  const calcProfit = document.getElementById('calcProfit');
+  
+  const US_PRICE = parseInt(calcWrapper.getAttribute('data-us-price') || '600');
+  const DENTAI_PRICE = parseInt(calcWrapper.getAttribute('data-dentai-price') || '150');
+  const UNIT_TEXT = calcWrapper.getAttribute('data-unit') || 'implant crowns';
+  const SAVINGS_PER_CROWN = US_PRICE - DENTAI_PRICE;
+
+  // Initialize values on load
+  function updateCalculator(count) {
+    calcCount.textContent = count;
+    
+    const yearlySavings = count * SAVINGS_PER_CROWN * 12;
+    calcTotal.textContent = yearlySavings.toLocaleString();
+    
+    const usMonthly = count * US_PRICE;
+    calcUs.textContent = usMonthly.toLocaleString();
+    
+    const dentaiMonthly = count * DENTAI_PRICE;
+    calcDentai.textContent = dentaiMonthly.toLocaleString();
+    
+    const profitCrowns = Math.floor((count * SAVINGS_PER_CROWN) / DENTAI_PRICE);
+    calcProfit.textContent = profitCrowns.toLocaleString() + " " + UNIT_TEXT;
+  }
+
+  // Set initial state
+  updateCalculator(parseInt(crownSlider.value));
+
+  crownSlider.addEventListener('input', (e) => {
+    updateCalculator(parseInt(e.target.value));
+  });
+}
