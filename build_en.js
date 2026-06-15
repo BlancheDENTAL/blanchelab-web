@@ -1,8 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const file = path.join(__dirname, 'en.html');
-let html = fs.readFileSync(file, 'utf8');
+const inputFile = path.join(__dirname, 'ko.html');
+const outputFile = path.join(__dirname, 'index.html');
+
+let html = fs.readFileSync(inputFile, 'utf8');
 
 const dictionary = {
   // Navigation
@@ -116,7 +118,6 @@ const dictionary = {
   '안전하게 포장되어 치과로 배송되며, 즉시 환자에게 장착할 수 있습니다.': 'Securely packaged and delivered via FedEx, ready to be seated immediately.',
 
   // QUALITY
-  'AI 통역': 'AI Translation',
   '글로벌 스탠다드 장비 및 소재': 'Global Standard Equipment & Materials',
   '최고급 5축 밀링기와 검증된 정품 지르코니아 블록만을 사용하여 오차 없는 보철물을 완성합니다.': 'We use premium 5-axis milling machines and authentic zirconia blocks for flawless prosthetics.',
   
@@ -162,11 +163,74 @@ const dictionary = {
   '이메일': 'Email',
   '대표': 'CEO',
   '사업자등록번호': 'Business Number',
+
+  // Newly translated text fragments from translate_en.js and translate_en2.js
+  '이제 한국의 치기공 퀄리티를<br>전 세계에서<br><em>만날 수 있습니다.</em>': 'Experience Korean Dental Lab Quality<br>Now Available<br><em>Worldwide.</em>',
+  '디지털 스캔-투-밀 워크플로우, 전 케이스 시니어 QC 검수.': 'Digital scan-to-mill workflow with senior QC for every case.',
+  '원장님의 삭제 스타일, 쉐이드, 컨택 방식을 학습한 한 명의 기공사가 매 케이스 담당.': 'A dedicated technician who learns your prep style, shade, and contact preferences.',
+  'Custom Abutment 포함 가격. 국내 평균 대비 합리적인 수가로 병원 수익성을 높여드립니다.': "Custom Abutment included. Maximize your clinic's profitability with highly competitive pricing.",
+  '월요일 스캔 전송, 다음 주 금요일 장착 가능. 배송비 포함. 단계별 진행 상황 실시간 업데이트.': 'Scan on Monday, seat by next Friday. Shipping included. Real-time updates at every stage.',
+  '원장님 진료에<br>필요한 <em>모든 것.</em>': 'Everything Your Practice<br><em>Needs.</em>',
+  '전체 가격표 요청하기': 'Request Full Price List',
+  '지르코니아, PFZ, e.max, PFM. Custom Abutment 포함. 14개 이상 임플란트 시스템 지원.': 'Zirconia, PFZ, e.max, PFM. Custom Abutment included. Supports 14+ implant systems.',
+  '단관 크라운, 3본~장스팬 브릿지, 인레이·온레이. 지르코니아 또는 e.max.': 'Single crowns, 3-unit to long-span bridges, inlays/onlays. Zirconia or e.max.',
+  '전악 고정성 보철. 12 또는 14유닛. 지르코니아 밀링 또는 레이어드.': 'Full arch fixed prosthetics. 12 or 14 units. Zirconia milled or layered.',
+  '핸드프레스 e.max 베니어. 심미 전문 기공사 담당. 3D 왁스업 무료 제공.': 'Hand-pressed e.max veneers handled by esthetic specialists. Free 3D wax-up provided.',
+  'Trista 또는 Scheu 소재. 전악 또는 편악. 리파인먼트 1세트 무료 포함.': 'Trista or Scheu materials. Full or partial arch. 1 set of refinement included for free.',
+  '교합 스플린트, 나이트가드, 수면무호흡 장치, 디지털 의치.': 'Occlusal splints, night guards, sleep apnea devices, digital dentures.',
+  '원장님이 사용하시는 임플란트(오스템, 덴티움 등)에 맞는 스캔바디 세트를 무상으로 지원/대여해 드립니다.': 'Free provision/rental of scan body kits tailored to your preferred implant system (Osstem, Dentium, etc.).',
+  '병원별 의뢰 통계, 지출 내역, 환자 스캔 데이터 통합 관리를 원장님 전용 웹/앱으로 제공. (무상)': 'Integrated management of lab statistics, expenses, and patient scan data via a dedicated web/app. (Free)',
+  'VIP 환자를 위한 긴급 제작 라인. 기본 10일 소요 기간을 48시간 내로 단축하여 발송합니다.': 'Emergency production line for VIP patients. Shortens the standard 10-day turnaround to within 48 hours.',
+  '스캔, 전송,<br><em>장착.</em>': 'Scan, Send,<br><em>Seat.</em>',
+  'Medit, Trios, Primescan, iTero 등 — 스캔 파일을 포털에 업로드하시면 됩니다. 파일 형식 설정은 저희가 안내해드립니다.': "Medit, Trios, Primescan, iTero, etc. — simply upload the files to our portal. We'll guide you on file formats.",
+  '쉐이드, 마진 종류, 컨택 방식, 이머전스 프로파일 — 한 번 등록하면 모든 케이스에 자동 적용됩니다.': 'Shade, margin type, contact style, emergence profile — register once, automatically applied to all cases.',
+  '담당 기공사가 밀링 전 3D 디자인 미리보기를 전송합니다. 승인 또는 수정 요청 — 원장님이 결정하세요.': 'Your tech sends a 3D design preview before milling. Approve or request changes — you are in control.',
+  '10 영업일, 제작 완료 후 배송까지. 단계별 진행 상황 업데이트.': '10 business days from fabrication to delivery. Real-time updates at every step.',
+  '어려운 치과 용어도<br>아무 어려움 없이<br><em>소통 가능</em>': 'Communicate Complex<br>Dental Terms With<br><em>Zero Barrier</em>',
+  '전 케이스 시니어 QC': 'Senior QC on Every Case',
+  '블랑쉬랩 — Blanche Dental Clinic 직영 기공소': 'DentAi — Premium In-house Dental Lab',
+  'Blanche Dental Clinic 직영 기공소, 블랑쉬랩. Implant Crown 220,000원부터. First Case Free.': 'Premium In-house Dental Lab, DentAi. Implant Crown from $150. First Case Free.',
+  '블랑쉬치과 직영 기공소, 블랑쉬랩. Implant Crown 200,000원부터. 첫 케이스 무료. 프리미엄 품질을 경험해보세요.': 'DentAi — Premium In-house Dental Lab. Implant Crown from $150. First Case Free. Uncompromising quality.',
+  '블랑쉬랩 — 프리미엄 인하우스 치과 기공소': 'DentAi — Premium In-house Dental Lab',
+  'Ai 기반 글로벌 치과기공 플랫폼. 10일 납기, 24시간 무상 리메이크 보증.': 'AI-Powered Global Dental Platform. 10-day turnaround, free remake guarantee.',
+  '10일': '10 Days',
+  'Dr. Kim님': 'Dr. Kim',
+  '박': 'P',
+  'Dr. Park님': 'Dr. Park',
+  '전치부 Esthetics': 'Anterior Esthetics',
+  '이': 'L',
+  'Dr. Lee님': 'Dr. Lee',
+  '3본 Bridge': '3-unit Bridge',
+  '최': 'C',
+  '최** 원장님': 'Dr. Choi',
+  '/월': '/mo',
+  '전담 기공사 배정': 'Dedicated Tech Assigned',
+  '20만원~': '$150~',
+  '어떤 스캐너로든 스캔': 'Scan with Any Scanner',
+  '원장님 스타일 등록': 'Save Your Style',
+  '전담 기공사가 3D 디자인 확인': '3D Design Preview',
+  '첫 번에 장착': 'Seat on First Try',
+  '블랑쉬치과 기공소 내부 사진': 'DentAi Lab Interior',
+  '발송 전 수석 기공사가 마진 적합도, 쉐이드, 교합 접촉을 직접 확인합니다.': 'Senior tech verifies margin fit, shade, and occlusal contacts before shipping.',
+  'State / Region 선택': 'Select Region',
+  '쉐이드, 마진 종류, Other 요청사항을 자유롭게 적어주세요...': 'Please specify shade, margins, or any other preferences...',
+  '서비스': 'Services',
+  '크라운 & Bridge': 'Crown & Bridge',
+  '시작하기': 'Get Started',
+  '블랑쉬치과 직영 · 서울특별시 서초구': 'Directly Operated · Seoul, Korea',
+  '첫 케이스 무료 신청하기': 'Claim Free Case',
+  '진행 방법 보기': 'See How It Works',
+
+  // SEO & Lang attribute
+  '<html lang="ko">': '<html lang="en">',
+  'og-image.jpg': 'og-image-en.jpg',
+  'https://dentai.com/"': 'https://dentai.com/en.html"',
+  '<a href="index.html" class="lang-switch">EN</a>': '<a href="ko.html" class="lang-switch">KO</a>'
 };
 
 for (const [ko, en] of Object.entries(dictionary)) {
   html = html.split(ko).join(en);
 }
 
-fs.writeFileSync(file, html, 'utf8');
-console.log('Translation complete.');
+fs.writeFileSync(outputFile, html, 'utf8');
+console.log('Build complete. index.html is now the English default.');
