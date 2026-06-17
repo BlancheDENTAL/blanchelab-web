@@ -728,8 +728,11 @@ body {
   .calc-result-number { font-size: 48px; }
   .calc-compare { flex-direction: column; gap: 16px; }
   .comm-grid { grid-template-columns: 1fr; }
-  .timeline-wrap { flex-direction: column; gap: 32px; margin-top: 48px; }
-  .timeline-track { top: 0; bottom: 0; left: 50%; width: 2px; height: auto; transform: translateX(-50%); }
+  .timeline-wrap { flex-direction: column; gap: 48px; margin-top: 48px; align-items: flex-start; max-width: 280px; margin-left: auto; margin-right: auto; }
+  .timeline-track { left: 11px; top: 0; bottom: 0; width: 2px; height: auto; transform: none; }
+  .timeline-step { display: flex; flex-direction: row; align-items: flex-start; text-align: left; gap: 20px; width: 100%; }
+  .tl-dot { margin: 0; flex-shrink: 0; }
+  .tl-title { margin-bottom: 4px; }
   .q-stats { flex-direction: column; gap: 40px; }
   .q-stat-num { font-size: 64px; }
   .big-step-card { height: 300px; }
