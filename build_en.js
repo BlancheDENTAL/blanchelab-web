@@ -13,33 +13,64 @@ const dictionary = {
   '<div class="case-avatar">이</div>': '<div class="case-avatar">L</div>',
   '<div class="case-avatar">최</div>': '<div class="case-avatar">C</div>',
 
+  // Meta & SEO
+  '<html lang="ko">': '<html lang="en">',
+  '<title>블랑쉬랩 — 블랑쉬치과 직영 기공소</title>': '<title>DentAi — Premium In-house Dental Lab</title>',
+  '블랑쉬치과 직영 기공소, 블랑쉬랩. Implant Crown 200,000원부터. 첫 케이스 무료. 프리미엄 품질을 경험해보세요.': 'DentAi — Premium In-house Dental Lab. Implant Crown from $150. First Case Free. Uncompromising quality.',
+  'content="블랑쉬랩 — 프리미엄 인하우스 치과 기공소"': 'content="DentAi — Premium In-house Dental Lab"',
+  'content="Ai 기반 글로벌 치과기공 플랫폼. 10일 납기, 24시간 무상 리메이크 보증."': 'content="AI-Powered Global Dental Lab Platform. 10-day turnaround, 24hr free remake guarantee."',
+  'og-image.jpg': 'og-image-en.jpg',
+  'https://dentai.com/"': 'https://dentai.com/en.html"',
+  '<a href="index.html" class="lang-switch">EN</a>': '<a href="ko.html" class="lang-switch">KO</a>',
+
   // Navigation
+  '서비스 & 가격표': 'Services & Pricing',
   '서비스 & 가격': 'Services',
   '진행 절차': 'Workflow',
   'AI 통역': 'AI Translation',
   '첫 케이스 무료 신청': 'Try One Case Free',
 
-  // Hero
-  '블랑쉬랩 — 블랑쉬치과 직영 기공소': 'DentAi — Premium In-house Dental Lab',
-  '블랑쉬치과 직영 기공소, 블랑쉬랩. Implant Crown 200,000원부터. 첫 케이스 무료. 프리미엄 품질을 경험해보세요.': 'DentAi — Premium In-house Dental Lab. Implant Crown from $150. First Case Free. Uncompromising quality.',
+  // Hero Section
   'Ai 기반 글로벌 치과기공 플랫폼': 'AI-Powered Global Dental Lab Platform',
   'Ai 기반<br>\n        글로벌 치과기공<br>\n        <em>플랫폼</em>': 'AI-Powered<br>\n        Global Dental Lab<br>\n        <em>Platform</em>',
   '구강 스캔 파일과 임상자료를 업로드하면, DentAi의 표준화된 제작 시스템을 통해 다양한 보철 기공물을 제작, 검수, 배송, 관리할 수 있습니다.': "Upload your scans and clinical data, and DentAi's standardized system will craft, inspect, deliver, and manage your dental prosthetics.",
-  '무료로 첫 케이스 시작하기': 'Try Your First Case Free',
   '첫 케이스 무료 신청하기': 'Claim Free Case',
+  '진행 방법 보기': 'How It Works',
+  '무료로 첫 케이스 시작하기': 'Try Your First Case Free',
   '케이스 살펴보기': 'View Cases',
   '환자가 만족하는 수준 높은 기공물': 'Premium prosthetics patients love',
   '압도적인 퀄리티': 'Unmatched Quality',
   '디지털 공정': 'Digital Workflow',
   '글로벌 스탠다드': 'Global Standard',
   
+  // Hero stats & live tracking
+  '<span class="stat-label">리메이크율</span>': '<span class="stat-label">Remake Rate</span>',
+  '리메이크율': 'Remake Rate',
+  '<span class="stat-label">납기 (배송 포함)</span>': '<span class="stat-label">Turnaround (Shipping Included)</span>',
+  '<span class="stat-num">20만원</span>': '<span class="stat-num">$150</span>',
+  '<span class="stat-label">임플란트 크라운~</span>': '<span class="stat-label">Implant Crown~</span>',
+  '현재 제작 중인 케이스': 'Active Cases',
+  '김** 원장님 · #16 임플란트 크라운': 'Dr. Kim · #16 Implant Crown',
+  '지르코니아 · 커스텀 어버트먼트': 'Zirconia · Custom Abutment',
+  '밀링 중': 'Milling',
+  '박** 원장님 · 베니어 ×6': 'Dr. Park · Veneer ×6',
+  'e.max · 전치부 심미': 'e.max · Anterior Esthetics',
+  'QC 검수': 'QC Inspection',
+  '이** 원장님 · 3본 브릿지': 'Dr. Lee · 3-unit Bridge',
+  'PFZ · #4–6': 'PFZ · #4–6',
+  '발송 완료': 'Shipped',
+  '최** 원장님 · 풀아치': 'Dr. Choi · Full Arch',
+  'All-on-X · 지르코니아 14유닛': 'All-on-X · Zirconia 14 Units',
+  '디자인 검토': 'Design Review',
+  '스캐너 무관 · 계약 없음 · 최소 수량 없음': 'Any Scanner · No Contract · No Minimums',
+
   // Trust bar
   '첫 케이스 완전 무료 — 카드 등록 불필요': 'First case completely free — no credit card required',
   'Medit · Trios · Primescan 전 기종 지원': 'Supports all scanners: Medit, Trios, Primescan',
   '장착 불량 시 24시간 내 무상 리메이크': 'Free remake within 24 hours if not seated perfectly',
   '10일 납기 · 배송비 포함': '10-day turnaround · Shipping included',
 
-  // Savings
+  // Savings Calculator
   '비용 절감 효과': 'YOUR SAVINGS',
   '임플란트 크라운 20만원.<br>': '$150 per implant crown.<br>',
   '<span class="apple-gradient-text">놀라운 가격을 경험하세요.</span>': '<span class="apple-gradient-text">Let that sink in.</span>',
@@ -50,8 +81,9 @@ const dictionary = {
   'DentAi (20만원)': 'DENTAI ($150)',
   '매월 <strong id="calcProfit">20개의 임플란트 크라운</strong>을 무료로 제작하는 것과 같은 수익 창출 효과.': "That's <strong id=\"calcProfit\">300 implant crowns</strong> of pure profit back in your pocket.",
   '₩': '$',
+  '개의 임플란트 크라운': 'Implant Crowns',
 
-  // Communication
+  // Communication Section
   '전담 기공사와<br>': 'Your lab tech is<br>',
   '<span class="apple-gradient-text">실시간으로 소통하세요.</span>': '<span class="apple-gradient-text">one message away.</span>',
   '모든 대화가 기록되는 <strong>디지털 워크플로우.</strong><br>디자인 컨펌, 진행 상황 추적, <em>원장님만의 선호 스타일 완벽 저장.</em>': 'Your complete <strong>digital workflow</strong> in one conversation.<br>Approve designs, track your case, <em>every preference on file.</em>',
@@ -63,7 +95,6 @@ const dictionary = {
   '스캔부터 배송까지 모든 단계를 확인하세요.': 'Follow every stage, scan to delivery.',
   '프렙 스타일 완벽 저장': 'Case Preferences Saved',
   '원장님의 고유한 스타일을 매번 기억합니다.': 'Your style, remembered every time.',
-
   '김OO 환자분 #19 임플란트 크라운 케이스 접수되었습니다.': 'New case received for patient Kim, #19 implant crown.',
   '원장님께서 평소 선호하시는 <strong>Elevated contacts</strong>와 <strong>Knife-edge margins</strong>으로 디자인 적용 중입니다.': 'I see you prefer <strong>elevated contacts</strong> and <strong>knife-edge margins</strong>. Applying your usual specs.',
   '완벽하네요. 이제 제 스타일을 잘 아시는군요.': 'Perfect. You know me well at this point.',
@@ -71,7 +102,7 @@ const dictionary = {
   '이래서 기공소를 바꿀 수가 없습니다. 감사합니다.': "This is why I don't switch labs. Thank you.",
   '1:1 전담 기공사': '1:1 Designated Lab Tech',
 
-  // Faster
+  // Faster Section
   '글로벌 배송 물류': 'GLOBAL LOGISTICS',
   '현지 기공소보다<br>': 'Faster than your<br>',
   '<span class="apple-gradient-text">더 빠르게 도착합니다.</span>': '<span class="apple-gradient-text">local lab.</span>',
@@ -81,7 +112,7 @@ const dictionary = {
   '정밀 밀링 & 품질 검수': 'Precision Milling & QC',
   'FedEx 특송 배송 완료': 'Delivered via FedEx',
 
-  // Quality Obsession
+  // Quality Obsession Section
   '완벽한 품질 보증': 'QUALITY OBSESSION',
   '리메이크에 <span class="apple-gradient-text">진심을 다합니다.</span>': 'We take remakes <span class="apple-gradient-text">personally.</span>',
   '만족스럽지 않으신가요? 24시간 내 <strong style="color:#fff;">전액 무상</strong> 재제작. 단순한 정책이 아닌 <strong style="color:#fff;">우리의 약속입니다.</strong>': 'Not perfect? Remade in 24 hours, <strong style="color:#fff;">zero cost</strong>. That is not a policy. <strong style="color:#fff;">That is a promise.</strong>',
@@ -91,7 +122,7 @@ const dictionary = {
   '재제작 무상 보증': 'REMAKE COST',
   '"단 한 번에 완벽하게 들어맞습니다. 마진은 깔끔하고, 교합 조정은 필요 없었죠."': '"Seated on the first try. Clean margins. Zero adjustments."',
 
-  // Workflow
+  // Workflow Section
   '스캔만 하세요. <span class="apple-gradient-text">나머진 저희가 합니다.</span>': 'You scan. We craft. <span class="apple-gradient-text">You seat.</span>',
   '원장님의 스캐너와 우리의 기술력. <strong>단 3단계면 충분합니다.</strong>': 'Four steps. Your scanner. Our hands. <strong>Done.</strong>',
   '모든 스캐너 호환. 단 60초.': 'Any scanner. 60 seconds.',
@@ -99,14 +130,14 @@ const dictionary = {
   '원장님의 스타일을 학습합니다.': 'We learn how you prep.',
   '쉐이드, 형태, 마진 선호도. 단 한 번의 설정으로 모든 케이스에 자동 적용.': 'Shade, contour, margin style. Set once, applied to every case.',
 
-  // WHY
+  // WHY Section
   '블랑쉬랩은 블랑쉬치과가 직접 운영하는 인하우스 기공소입니다. 외주 없이, 타협 없이 — 저희 환자에게 쓰는 것과 동일한 기준으로 보철물을 제작합니다.': 'DentAi is operated directly by top dental clinics. Without outsourcing, without compromise — we craft prosthetics to the exact standards we use for our own patients.',
   'DentAi 는 70,000개 이상 축적된 기공 데이터를 가진 기공소인 블랑쉬랩에서 100% 기공물을 제작해 퀄리티를 향상 시킵니다.': 'DentAi crafts 100% of its prosthetics from labs with over 70,000 accumulated clinical data points, continuously improving quality.',
   '어려운 치과 용어도 아무 어려움 없이 소통 가능': 'Communicate complex dental terms effortlessly via AI.',
   '전체를 Ai 통역에 맞게 내용 변경': 'Fully AI-Translated Communication',
   '블랑쉬치과 직접 운영': 'Directly Operated by Dental Clinics',
 
-  // SERVICES
+  // SERVICES Section
   '보철 기공 서비스': 'Prosthetic Services',
   '합리적인 가격, 타협 없는 퀄리티': 'Reasonable Pricing, Uncompromising Quality',
   '투명한 기공료': 'Transparent Pricing',
@@ -117,7 +148,7 @@ const dictionary = {
   '커스텀 어버트먼트': 'Custom Abutment',
   '모든 가격표 보기': 'View Full Price List',
 
-  // HOW IT WORKS
+  // HOW IT WORKS Section
   '진행 절차 안내': 'How It Works',
   '단 3단계로 끝나는 간편한 의뢰': 'Simple 3-Step Process',
   '가입 및 스캔 업로드': 'Sign Up & Upload Scans',
@@ -127,11 +158,11 @@ const dictionary = {
   '치과 도착 및 장착': 'Delivery & Seating',
   '안전하게 포장되어 치과로 배송되며, 즉시 환자에게 장착할 수 있습니다.': 'Securely packaged and delivered via FedEx, ready to be seated immediately.',
 
-  // QUALITY
+  // QUALITY Section
   '글로벌 스탠다드 장비 및 소재': 'Global Standard Equipment & Materials',
   '최고급 5축 밀링기와 검증된 정품 지르코니아 블록만을 사용하여 오차 없는 보철물을 완성합니다.': 'We use premium 5-axis milling machines and authentic zirconia blocks for flawless prosthetics.',
   
-  // TESTIMONIALS
+  // TESTIMONIALS Section
   '원장님들의 리얼 후기': 'Real Testimonials from Dentists',
   '원장님들의 이야기': 'Dentist Testimonials',
   '이미 많은 원장님들이 만족하고 계십니다.': 'Join the growing list of highly satisfied dentists.',
@@ -145,7 +176,7 @@ const dictionary = {
   '저렴한 가격에 처음엔 반신반의했지만, 퀄리티를 보고 놀랐습니다. 앞으로 모든 임플란트 케이스는 이곳에 맡길 예정입니다.': 'I was skeptical because of the low price, but the quality amazed me. All my implant cases go to DentAi now.',
   '- 서울 마포구 C치과 원장': '- Dr. Kim, VA',
 
-  // FAQ
+  // FAQ Section
   '자주 묻는 질문': 'Frequently Asked Questions',
   '원장님들이 가장 궁금해하시는 내용을 모았습니다.': 'Answers to the most common questions.',
   '정말 첫 케이스는 무료인가요?': 'Is the first case really free?',
@@ -157,7 +188,7 @@ const dictionary = {
   '문제가 생기면 리메이크가 가능한가요?': 'What if I need a remake?',
   '장착 시 마진이나 교합에 문제가 있을 경우, 24시간 내 무상 리메이크를 최우선으로 진행해 드립니다.': 'If there are any issues with margins or occlusion, we prioritize a free remake within 24 hours.',
 
-  // CTA & FOOTER
+  // CTA & FOOTER Section
   '치과 기공의 새로운 기준, 지금 바로 경험하세요.': 'Experience the new standard in dental labs today.',
   '첫 케이스를 무료로 의뢰하고 퀄리티를 직접 확인해보세요.': 'Send us your first case for free and see the quality for yourself.',
   '이름 (원장님 / 치과명)': 'Name / Clinic Name',
@@ -171,7 +202,7 @@ const dictionary = {
   '대표': 'CEO',
   '사업자등록번호': 'Business Number',
 
-  // Tag replacements (Exact spans to prevent destroying other words)
+  // Tag replacements
   '<span class="svc-tag">가장 많이 찾으시는</span>': '<span class="svc-tag">Most Popular</span>',
   '<span class="svc-tag">보철</span>': '<span class="svc-tag">Prosthetics</span>',
   '<span class="svc-tag">풀아치</span>': '<span class="svc-tag">Full Arch</span>',
@@ -184,8 +215,8 @@ const dictionary = {
   '이제 한국의 치기공 퀄리티를<br>전 세계에서<br><em>만날 수 있습니다.</em>': 'Experience Korean Dental Lab Quality<br>Now Available<br><em>Worldwide.</em>',
   '디지털 스캔-투-밀 워크플로우, 전 케이스 시니어 QC 검수.': 'Digital scan-to-mill workflow with senior QC for every case.',
   '원장님의 삭제 스타일, 쉐이드, 컨택 방식을 학습한 한 명의 기공사가 매 케이스 담당.': 'A dedicated technician who learns your prep style, shade, and contact preferences.',
-  'Custom Abutment 포함 가격. 국내 평균 대비 합리적인 수가로 병원 수익성을 높여드립니다.': "Custom Abutment included. Maximize your clinic's profitability with highly competitive pricing.",
-  '월요일 스캔 전송, 다음 주 금요일 장착 가능. 배송비 포함. 단계별 진행 상황 실시간 업데이트.': 'Scan on Monday, seat by next Friday. Shipping included. Real-time updates at every stage.',
+  '<div class="why-card-body">커스텀 어버트먼트 포함 가격. 국내 평균 대비 합리적인 수가로 병원 수익성을 높여드립니다.</div>': '<div class="why-card-body">Custom Abutment included. Maximize your clinic\'s profitability with highly competitive pricing.</div>',
+  '<div class="why-card-body">월요일 스캔 전송, 다음 주 금요일 장착 가능. 배송비 포함. 단계별 진행 상황 실시간 업데이트.</div>': '<div class="why-card-body">Scan on Monday, seat by next Friday. Shipping included. Real-time updates at every stage.</div>',
   '원장님 진료에<br>필요한 <em>모든 것.</em>': 'Everything Your Practice<br><em>Needs.</em>',
   '전체 가격표 요청하기': 'Request Full Price List',
   '지르코니아, PFZ, e.max, PFM. Custom Abutment 포함. 14개 이상 임플란트 시스템 지원.': 'Zirconia, PFZ, e.max, PFM. Custom Abutment included. Supports 14+ implant systems.',
@@ -218,34 +249,68 @@ const dictionary = {
   '발송 전 수석 기공사가 마진 적합도, 쉐이드, 교합 접촉을 직접 확인합니다.': 'Senior tech verifies margin fit, shade, and occlusal contacts before shipping.',
   'State / Region 선택': 'Select Region',
 
-  // Image 1 remaining
+  // Mappings to fix remaining issues
+  '제작 ~ 배송 완료': 'Turnaround (Shipping Included)',
+  '원장님 진료에': 'Everything',
+  '필요한': 'Your Practice',
+  '모든 것.': 'Needs.',
+  '가장 많이 찾으시는': 'Most Popular',
+  '+ 커스텀 어버트먼트': '+ Custom Abutment',
+  '지르코니아, PFZ, e.max, PFM. 커스텀 어버트먼트 포함. 14개 이상 임플란트 시스템 지원.': 'Zirconia, PFZ, e.max, PFM. Custom Abutment included. Supports 14+ implant systems.',
+  '/ 유닛': '/ Unit',
+  '≈ $150 USD · 어버트먼트 포함': '≈ $150 USD · Abutment Included',
+  '보철': 'Prosthetics',
+  '단관 크라운 & 브릿지': 'Single Crowns & Bridges',
+  '단관 크라운, 3본~장스팬 브릿지, 인레이·온레이. 지르코니아 또는 e.max.': 'Single crowns, 3-unit to long-span bridges, inlays/onlays. Zirconia or e.max.',
+  '/ 유닛~': '/ Unit~',
+  '풀아치': 'Full Arch',
+  '전악 고정성 보철. 12 또는 14유닛. 지르코니아 밀링 또는 레이어드.': 'Full arch fixed prosthetics. 12 or 14 units. Zirconia milled or layered.',
+  '/ 아치~': '/ Arch~',
+  '심미': 'Esthetic',
+  '베니어 & 스마일 디자인': 'Veneer & Smile Design',
+  '핸드프레스 e.max 베니어. 심미 전문 기공사 담당. 3D 왁스업 무료 제공.': 'Hand-pressed e.max veneers handled by esthetic specialists. Free 3D wax-up provided.',
+  '교정': 'Ortho',
   '투명교정 장치': 'Clear Aligners',
-  '투명Ortho 장치': 'Clear Aligners',
+  'Trista 또는 Scheu 소재. 전악 또는 편악. 리파인먼트 1세트 무료 포함.': 'Trista or Scheu materials. Full or partial arch. 1 set of refinement included for free.',
   '기타 장치': 'Other Devices',
-  '나이트가드 & 스플린트': 'Nightguards & Splints',
-  '나이트가드 & Dentures': 'Nightguards & Dentures',
+  '나이트가드 & 의치': 'Nightguards & Dentures',
+  '교합 스플린트, 나이트가드, 수면무호흡 장치, 디지털 의치.': 'Occlusal splints, night guards, sleep apnea devices, digital dentures.',
   '신규 거래처 혜택': 'New Client Benefit',
   '스캔바디 스타터 키트': 'Scanbody Starter Kit',
+  '원장님이 사용하시는 임플란트(오스템, 덴티움 등)에 맞는 스캔바디 세트를 무상으로 지원/대여해 드립니다.': 'Free provision/rental of scan body kits tailored to your preferred implant system (Osstem, Dentium, etc.).',
   '무상 지원': 'Free Provision',
   '출시 예정': 'Coming Soon',
-  '프로토타입 구경하기 ➔': 'View Prototype ➔',
+  '병원별 의뢰 통계, 지출 내역, 환자 스캔 데이터 통합 관리를 원장님 전용 웹/앱으로 제공. (무상)': 'Integrated management of lab statistics, expenses, and patient scan data via a dedicated web/app. (Free)',
   '프로토타입 구경하기 →': 'View Prototype →',
+  'VIP 환자를 위한 긴급 제작 라인. 기본 10일 소요 기간을 48시간 내로 단축하여 발송합니다.': 'Emergency production line for VIP patients. Shortens the standard 10-day turnaround to within 48 hours.',
   '수가 + 20%': 'Base Fee + 20%',
-  'Express Track': 'Express Track',
-
-  // Image 2
+  '스캔, 전송,': 'Scan, Send,',
+  '장착.': 'Seat.',
+  '어떤 스캐너로든 스캔': 'Scan with Any Scanner',
+  'Medit, Trios, Primescan, iTero 등 — 스캔 파일을 포털에 업로드하시면 됩니다. 파일 형식 설정은 저희가 안내해드립니다.': 'Medit, Trios, Primescan, iTero, etc. — simply upload the files to our portal. We\'ll guide you on file formats.',
+  '원장님 스타일 등록': 'Save Your Style',
+  '쉐이드, 마진 종류, 컨택 방식, 이머전스 프로파일 — 한 번 등록하면 모든 케이스에 자동 적용됩니다.': 'Shade, margin type, contact style, emergence profile — register once, automatically applied to all cases.',
+  '전담 기공사가 3D 디자인 확인': '3D Design Preview',
+  '담당 기공사가 밀링 전 3D 디자인 미리보기를 전송합니다. 승인 또는 수정 요청 — 원장님이 결정하세요.': 'Your tech sends a 3D design preview before milling. Approve or request changes — you are in control.',
+  '첫 번에 장착': 'Seat on First Try',
+  '10 영업일, 제작 완료 후 배송까지. 단계별 진행 상황 업데이트. 장착 불량 시 24시간 내 무상 리메이크.': '10 business days from fabrication to delivery. Real-time updates. Free remake within 24 hours if not seated perfectly.',
+  '블랑쉬치과 기공소 내부 사진': 'DentAi Lab Interior',
+  '어려운 치과 용어도': 'Communicate Complex',
+  '아무 어려움 없이': 'Dental Terms With',
+  '소통 가능': 'Zero Barrier',
+  '전체를 Ai 통역에 맞게 내용 변경': 'Fully AI-Translated Communication',
+  '전 케이스 시니어 QC': 'Senior QC on Every Case',
   'ISO 인증 소재': 'ISO Certified Materials',
   '평균 15년 이상의 마스터 팀': 'Master Team with 15+ Years Avg. Experience',
-  '단순 기공사가 아닌 각 분야(Esthetic, Full Arch, 임플란트)의 수석 마스터들이 원장님의 케이스를 직접 책임집니다.': 'Not just ordinary technicians. Senior masters in each specialty (Esthetic, Full Arch, Implant) take personal responsibility for your cases.',
+  '— 단순 기공사가 아닌 각 분야(심미, 풀아치, 임플란트)의 수석 마스터들이 원장님의 케이스를 직접 책임집니다.': 'Not just ordinary technicians. Senior masters in each specialty (Esthetic, Full Arch, Implant) take personal responsibility for your cases.',
   '타협 없는 소재 선택': 'Uncompromising Material Selection',
-  '저희 환자에게 쓰는 것과 동일한 Grade-A 소재만 사용합니다. 비용을 이유로 소재를 바꾸지 않습니다.': 'We use only Grade-A materials, identical to those we use for our own patients. We never swap materials to cut costs.',
-  'Senior QC on Every Case': 'Senior QC on Every Case',
+  '— 저희 환자에게 쓰는 것과 동일한 Grade-A 소재만 사용합니다. 비용을 이유로 소재를 바꾸지 않습니다.': 'We use only Grade-A materials, identical to those we use for our own patients. We never swap materials to cut costs.',
+  '— 발송 전 수석 기공사가 마진 적합도, 쉐이드, 교합 접촉을 직접 확인합니다.': 'Senior tech verifies margin fit, shade, and occlusal contacts before shipping.',
   '3D 디자인 미리보기': '3D Design Preview',
-  '밀링 전 원장님이 직접 디자인을 검토하고 수정을 요청할 수 있습니다.': 'You can review the design and request modifications yourself before milling begins.',
-
-  // Image 3
-  '결과가<br>\n        증명합니다.': 'The Results<br>\n        Speak for Themselves.',
-  '결과가 증명합니다.': 'The Results Speak for Themselves.',
+  '— 밀링 전 원장님이 직접 디자인을 검토하고 수정을 요청할 수 있습니다.': 'You can review the design and request modifications yourself before milling begins.',
+  '원장님들의 이야기': 'Dentist Testimonials',
+  '결과가': 'The Results',
+  '증명합니다.': 'Speak for Themselves.',
   '첫 번에 바로 장착됐습니다. 마진이 깔끔하고 조정이 전혀 필요 없었어요. 이런 게 제대로 만든 보철이구나 싶었습니다.': '"Seated immediately on the first try. Clean margins and absolutely no adjustments needed. This is what a properly made prosthetic feels like."',
   '김** 원장': 'Dr. Kim',
   '서울 서초구 · 개원 치과': 'Seocho, Seoul · Private Clinic',
@@ -254,71 +319,120 @@ const dictionary = {
   '경기도 분당 · 치과 의원': 'Bundang, Gyeonggi · Dental Clinic',
   '상단 전치부 단관이 얼마나 까다로운지 아시잖아요. 쉐이드 매칭이 완벽했습니다. 환자분도 매우 만족하셨어요.': '"You know how tricky anterior single crowns can be. The shade matching was perfect. The patient was highly satisfied."',
   '박** 원장': 'Dr. Park',
-  '서울 마포구 · Esthetic 치과': 'Mapo, Seoul · Esthetic Clinic',
-
-  // Image 4
-  '지금 Get Started': 'Get Started Now',
-  '첫 케이스는<br>\n        저희가 냅니다.': 'Your First Case<br>\n        Is On Us.',
-  '첫 케이스는 저희가 냅니다.': 'Your First Case Is On Us.',
-  '카드 등록 불필요, 계약 없음, 최소 수량 없음. 케이스 한 건을 먼저 경험해보시고 판단하세요.': 'No credit card, no contracts, no minimums. Experience one case first and then decide.',
+  '서울 마포구 · 심미 치과': 'Mapo, Seoul · Esthetic Clinic',
+  '서울 마포구 · 개원 치과': 'Mapo, Seoul · Private Clinic',
+  '자주 묻는 질문': 'Frequently Asked Questions',
+  '궁금한 점이': 'Frequently Asked',
+  '있으신가요?': 'Questions',
+  '리메이크 시 배송비나 추가 비용이 있나요?': 'Is there any shipping or additional cost for remakes?',
+  '아니요. 장착 불량 등의 이유로 리메이크가 발생할 경우, 24시간 내 무상 재제작은 물론 왕복 배송비까지 모두 블랑쉬랩에서 부담합니다.': 'No. If a remake is needed due to fit issues, we cover 100% of the cost, including round-trip shipping, and complete it within 24 hours.',
+  '어떤 구강 스캐너와 호환되나요?': 'Which intraoral scanners are compatible?',
+  'Medit, 3Shape Trios, Primescan, iTero 등 시중의 모든 주요 구강 스캐너의 STL, PLY 형태 파일을 지원합니다. 지정된 파일 전송 포털을 통해 간편하게 업로드할 수 있습니다.': 'We support STL and PLY files from all major scanners, including Medit, 3Shape Trios, Primescan, and iTero. You can easily upload them via our secure portal.',
+  '첫 케이스 무료 혜택은 어떤 보철물에 적용되나요?': 'Which restorations qualify for the free first case?',
+  '임플란트 크라운(커스텀 어버트먼트 포함), 단관 크라운, 브릿지, 베니어 중 원장님이 테스트해보고 싶으신 케이스 1건을 비용 없이 진행해 드립니다.': 'You can choose any single case — including an implant crown (custom abutment included), single crown, bridge, or veneer — to test our quality for free.',
+  '스캔바디 키트는 무료로 제공되나요?': 'Is the scan body kit provided for free?',
+  '네, 거래를 시작하시면 원장님이 주로 사용하시는 임플란트 시스템에 맞는 정밀 스캔바디 키트를 치과로 무상 대여 및 발송해 드립니다.': 'Yes, upon starting, we will ship a precision scan body kit matching your preferred implant system to your clinic for free.',
+  '지금 시작하기': 'Get Started Today',
+  '첫 케이스는': 'Your First Case',
+  '저희가 냅니다.': 'Is On Us.',
   '첫 케이스 완전 무료': 'First Case Completely Free',
-  'Implant Crown, 브릿지, 베니어 중 선택': 'Choose from Implant Crown, Bridge, or Veneer',
+  '— 임플란트 크라운, 브릿지, 베니어 중 선택': '— Choose from Implant Crown, Bridge, or Veneer',
   '스캔바디 키트 무료 발송': 'Free Scanbody Kit Delivery',
-  '치과로 직접 배송': 'Delivered directly to your clinic',
-  '1:1 Designated Lab Tech 즉시 배정': '1:1 Designated Lab Tech Assigned Instantly',
-  '첫날부터 같은 기공사가 담당': 'The same technician from day one',
+  '— 치과로 직접 배송': '— Delivered directly to your clinic',
+  '1:1 전담 기공사 즉시 배정': '1:1 Designated Lab Tech Assigned Instantly',
+  '— 첫날부터 같은 기공사가 담당': '— The same technician from day one',
   '무상 리메이크 보증': 'Free Remake Guarantee',
-  '장착 불량 시 24hr 내 재제작': 'Remade within 24hrs if fit is imperfect',
-  '10 Days 납기': '10-Day Turnaround',
-  '배송비 포함, 단계별 진행 알림': 'Shipping included, step-by-step notifications',
+  '— 장착 불량 시 24시간 내 재제작': '— Remade within 24hrs if fit is imperfect',
+  '10일 납기': '10-Day Turnaround',
+  '— 배송비 포함, 단계별 진행 알림': '— Shipping included, step-by-step notifications',
   '케이스 의뢰 신청': 'Submit Case Request',
-  '첫 케이스무료': 'First Case Free',
-  '24hr 내 전담 기공사가 배정되어 연락드립니다.': 'A designated technician will contact you within 24hrs.',
-  '성 *': 'Last Name *',
-  '이름 *': 'First Name *',
-  'Email *': 'Email *',
-  '연락처 (휴대폰)': 'Phone Number',
-  '치과 상호 *': 'Clinic Name *',
+  '첫 케이스 무료': 'First Case Free',
+  '24시간 내 전담 기공사가 배정되어 연락드립니다.': 'A designated technician will contact you within 24hrs.',
+  '성': 'Last Name',
+  '이름': 'First Name',
+  '이메일': 'Email',
+  '연락처 (휴대폰)': 'Phone Number (Mobile)',
+  '치과 상호': 'Clinic Name',
   '지역': 'Region',
   '지역 선택': 'Select Region',
+  '서울 서초/서초': 'Seoul Seocho/Seocho',
+  '서울 강북/도심': 'Seoul Gangbuk/Downtown',
+  '서울 기타': 'Seoul Other',
+  '경기 (수도권)': 'Gyeonggi (Metro)',
+  '부산/경남': 'Busan/Gyeongnam',
+  '대구/경북': 'Daegu/Gyeongbuk',
+  '인천': 'Incheon',
+  '광주/전남': 'Gwangju/Jeonnam',
+  '대전/충청': 'Daejeon/Chungcheong',
+  '기타 지방': 'Other Regions',
   '사용 중인 구강 스캐너': 'Intraoral Scanner in Use',
   '스캐너 선택': 'Select Scanner',
-  '첫 케이스 보철 종류 *': 'First Case Prosthetic Type *',
+  '인상 채득 (아날로그)': 'Physical Impression (Analog)',
+  '기타 / 미사용': 'Other / Not Using',
+  '첫 케이스 보철 종류': 'First Case Prosthetic Type',
   '단관 크라운': 'Single Crown',
   '브릿지': 'Bridge',
   '베니어': 'Veneer',
   '기타': 'Other',
-  '스캔 파일 (선택 — 나중에 이메일로도 가능)': 'Scan File (Optional — Can email later)',
-  '인상 채득 (아날로그)': 'Physical Impression (Analog)',
-  '기타 / 미사용': 'Other / Not Using',
+  '스캔 파일': 'Scan File',
+  '(선택 — 나중에 이메일로도 가능)': '(Optional — Can email later)',
+  '스캔 파일을 여기에 끌어다 놓거나 클릭하세요': 'Drag and drop scan files here or click to upload',
+  '.STL · .PLY · .3OX · .ZIP · 최대 200MB': '.STL · .PLY · .3OX · .ZIP · Max 200MB',
   '케이스 특이사항 / 요청사항': 'Case Notes / Special Requests',
-  '쉐이드, 마진 종류, 기타 요청사항을 자유롭게 적어주세요...': 'Please specify shade, margins, or any other preferences...',
-  '개인정보는 케이스 진행 목적으로만<br>사용되며 제3자에게 제공되지 않습니다.': 'Your personal information is used solely for case processing<br>and will not be shared with third parties.',
+  '개인정보는 케이스 진행 목적으로만': 'Your personal information is used solely for case processing',
+  '사용되며 제3자에게 제공되지 않습니다.': 'and will not be shared with third parties.',
   '신청하기': 'Submit Request',
   '신청이 접수되었습니다.': 'Request Received.',
   '이메일을 확인해 주세요': 'Please check your email',
   '— 접수 확인서와 다음 단계 안내를 보내드렸습니다.': '— we have sent a confirmation and next steps.',
-  '신청이 완료되었습니다!': 'Request completed successfully!',
-  
-  // Footer & Misc
-  '블랑쉬치과 직영 인하우스 기공소.<br>서울 서초에서 정밀 보철물을 제작합니다.': 'In-house dental lab operated by Blanche Dental Clinic.<br>Crafting precision prosthetics in Seocho, Seoul.',
+  '블랑쉬치과 직영 인하우스 기공소.': 'In-house dental lab operated by Blanche Dental Clinic.',
+  '서울 서초에서 정밀 보철물을 제작합니다.': 'Crafting precision prosthetics in Seocho, Seoul.',
+  '서비스': 'Services',
+  '크라운 & 브릿지': 'Crowns & Bridges',
+  '투명교정': 'Clear Aligners',
   '회사 정보': 'Company Info',
   'DentAi 소개': 'About DentAi',
   '가격표': 'Price List',
   '시작하기': 'Get Started',
   '스캔바디 키트 요청': 'Request Scanbody Kit',
   '상담 예약': 'Book a Consultation',
-  '블랑쉬치과 직영 · 서울특별시 서초구': 'Directly Operated · Seocho, Seoul, Korea',
+  '블랑쉬치과': 'Blanche Dental',
+  '직영 · 서울특별시 서초구': 'Directly Operated · Seocho, Seoul, Korea',
+  '개인정보처리방침 · 이용약관': 'Privacy Policy · Terms of Service',
+  '신청이 완료되었습니다!': 'Request completed successfully!',
+  
+  // Specific Form Tag Translations to prevent '성' collision
+  '<label class="form-label">성 <span class="req">*</span></label>': '<label class="form-label">Last Name <span class="req">*</span></label>',
+  '<label class="form-label">이름 <span class="req">*</span></label>': '<label class="form-label">First Name <span class="req">*</span></label>',
+  '<label class="form-label">이메일 <span class="req">*</span></label>': '<label class="form-label">Email <span class="req">*</span></label>',
+  '<label class="form-label">치과 상호 <span class="req">*</span></label>': '<label class="form-label">Clinic Name <span class="req">*</span></label>',
+  '<label class="form-label">지역</label>': '<label class="form-label">Region</label>',
+  '<label class="form-label">사용 중인 구강 스캐너</label>': '<label class="form-label">Intraoral Scanner in Use</label>',
+  '<label class="form-label">첫 케이스 보철 종류 <span class="req">*</span></label>': '<label class="form-label">First Case Restorative Type <span class="req">*</span></label>',
+  '<label class="form-label">스캔 파일 <span style="color:var(--text-muted); font-size:11px; font-weight:400;">(선택 — 나중에 이메일로도 가능)</span></label>': '<label class="form-label">Scan File <span style="color:var(--text-muted); font-size:11px; font-weight:400;">(Optional — Can email later)</span></label>',
+  '<label class="form-label">케이스 특이사항 / 요청사항</label>': '<label class="form-label">Case Notes / Special Requests</label>',
+  '<div class="upload-text" id="koUploadText">스캔 파일을 여기에 끌어다 놓거나 클릭하세요</div>': '<div class="upload-text" id="koUploadText">Drag and drop scan files here or click to upload</div>',
+  '<div class="submit-note">개인정보는 케이스 진행 목적으로만<br>사용되며 제3자에게 제공되지 않습니다.</div>': '<div class="submit-note">Your personal information is used solely for case processing<br>and will not be shared with third parties.</div>',
+  '<div class="success-title">신청이 접수되었습니다.</div>': '<div class="success-title">Request Received.</div>',
+  '<div class="form-head-title">케이스 의뢰 신청 <span class="free-badge">첫 케이스 무료</span></div>': '<div class="form-head-title">Claim Your <span class="free-badge">First Free Case</span></div>',
+  '<div class="form-head-sub">24시간 내 전담 기공사가 배정되어 연락드립니다.</div>': '<div class="form-head-sub">A designated technician will contact you within 24 hours.</div>',
+  'placeholder="김" required name="lastName" id="koLast"': 'placeholder="Smith" required name="lastName" id="koLast"',
+  'placeholder="민준" required name="firstName" id="koFirst"': 'placeholder="John" required name="firstName" id="koFirst"',
+  'placeholder="○○치과의원" required name="clinic" id="koClinic"': 'placeholder="Clinic Name Dental" required name="clinic" id="koClinic"',
+  'placeholder="쉐이드, 마진 종류, 기타 요청사항을 자유롭게 적어주세요..." id="koNotes"': 'placeholder="Please specify shade, margins, or any other requests..." id="koNotes"',
+  '<option value="">지역 선택</option>': '<option value="">Select Region</option>',
+  '<option value="">스캐너 선택</option>': '<option value="">Select Scanner</option>',
 
-  // SEO & Lang attribute
-  '<html lang="ko">': '<html lang="en">',
-  'og-image.jpg': 'og-image-en.jpg',
-  'https://dentai.com/"': 'https://dentai.com/en.html"',
-  '<a href="index.html" class="lang-switch">EN</a>': '<a href="ko.html" class="lang-switch">KO</a>'
+  // Fixed specific text block indentation issues
+  '      <p class="form-note">\n        카드 등록 불필요, 계약 없음, 최소 수량 없음. 케이스 한 건을 먼저 경험해보시고 판단하세요.\n      </p>': '      <p class="form-note">\n        No credit card required, no contracts, no minimums. Experience one case first and then decide.\n      </p>',
+  '        카드 등록 불필요, 계약 없음, 최소 수량 없음. 케이스 한 건을 먼저 경험해보시고 판단하세요.': 'No credit card required, no contracts, no minimums. Experience one case first and then decide.'
 };
 
-for (const [ko, en] of Object.entries(dictionary)) {
-  html = html.split(ko).join(en);
+// Sort keys by length in descending order to avoid substring collision
+const sortedKeys = Object.keys(dictionary).sort((a, b) => b.length - a.length);
+
+for (const ko of sortedKeys) {
+  html = html.split(ko).join(dictionary[ko]);
 }
 
 fs.writeFileSync(outputFile, html, 'utf8');
