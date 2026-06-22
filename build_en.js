@@ -29,6 +29,9 @@ const dictionary = {
   '진행 절차': 'Workflow',
   'AI 통역': 'AI Translation',
   '첫 케이스 무료 신청': 'Try One Case Free',
+  '비용 절감': 'Savings',
+  '품질 & 소통': 'Quality & Comm.',
+  'DentAi 소개': 'About DentAi',
 
   // Hero Section
   'Ai 기반 글로벌 치과기공 플랫폼': 'AI-Powered Global Dental Lab Platform',
