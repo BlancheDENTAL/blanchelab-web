@@ -83,8 +83,11 @@ const dictionary = {
   '일반 기공소 평균 (60만원)': 'US AVERAGE ($600)',
   'DentAi (20만원)': 'DENTAI ($150)',
   '매월 <strong id="calcProfit">20개의 임플란트 크라운</strong>을 무료로 제작하는 것과 같은 수익 창출 효과.': "That's <strong id=\"calcProfit\">300 implant crowns</strong> of pure profit back in your pocket.",
-  '₩': '$',
   '개의 임플란트 크라운': 'Implant Crowns',
+  'data-us-price="600000" data-dentai-price="200000"': 'data-us-price="600" data-dentai-price="150"',
+  '₩<span id="calcTotal">120,000,000</span>': '$<span id="calcTotal">135,000</span>',
+  '₩<span id="calcUs">15,000,000</span>': '$<span id="calcUs">15,000</span>',
+  '₩<span id="calcDentai">5,000,000</span>': '$<span id="calcDentai">3,750</span>',
 
   // Communication Section
   '전담 기공사와<br>': 'Your lab tech is<br>',
